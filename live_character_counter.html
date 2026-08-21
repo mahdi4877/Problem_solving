@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+
+<body>
+    <textarea id="textInput" placeholder="Start typing..."></textarea>
+    <p id="charCount">0 characters</p>
+
+    <script>
+        const input = document.getElementById('textInput');
+        const display = document.getElementById('charCount');
+
+        input.addEventListener('input', (e) => {
+            const length = e.target.value.length;
+            display.textContent = `${length} characters`;
+        });
+    </script>
+</body>
+
+</html>
