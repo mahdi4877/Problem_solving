@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+
+<body>
+    <h1 id="count">0</h1>
+    <button id="inc">Increase</button>
+    <button id="dec">Decrease</button>
+    <button id="reset">Reset</button>
+
+    <script>
+        let count = 0;
+        const countDisplay = document.getElementById('count');
+
+        document.getElementById('inc').addEventListener('click', () => {
+            count++;
+            countDisplay.textContent = count;
+        });
+
+        document.getElementById('dec').addEventListener('click', () => {
+            count--;
+            countDisplay.textContent = count;
+        });
+
+        document.getElementById('reset').addEventListener('click', () => {
+            count = 0;
+            countDisplay.textContent = count;
+        });
+    </script>
+</body>
+
+</html>
